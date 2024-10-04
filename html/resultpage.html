@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Page</title>
+
+    <!-- Web3 Connect Cdn link -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7/web3.min.js"
+      integrity="sha512-yAmmVkOXqtDZRaueLdmLwMB67JtaRtjFzQGiAiJKvLiFlDvq4Tzm5R6uLcOMyvPRQlXpYHdYxc5IbiCwuquhUw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- jquery Cdn link -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    
+    <link rel="stylesheet" type="text/css" href="../css/resultpage.css" />
+    <script type="text/javascript" src="../script/main.js"></script>
+
+  </head>
+  <body>
+    <h1 align="center">
+      Decentralized Voting Application Using Ethereum Blockchain
+    </h1>
+
+    <div id="candidate" class="container">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th>Candidate ID</th>
+            <th>Candidate Name</th>
+            <th>Candidate Vote Count</th>
+          </tr>
+        </thead>
+        <tbody id="candidateBox"></tbody>
+      </table>
+      <br />
+    </div>
+    <div id="showResult"></div>
+    <button id="displayResult" class="btn btn-primary" onclick="showResult();">Show Result</button>
+  </body>
+</html>
