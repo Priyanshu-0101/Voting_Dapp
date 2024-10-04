@@ -269,7 +269,7 @@ async function connectContract() {
       "type": "function"
     }
   ];
-  const Address = "0x9642281eCb3234D7daa66c77F0E2ae9a6ed840b9";  // Contract Address
+  const Address = "";  // Contract Address
   window.web3 = await new Web3(window.ethereum);
   window.contract = await new window.web3.eth.Contract(ABI, Address);
 }
